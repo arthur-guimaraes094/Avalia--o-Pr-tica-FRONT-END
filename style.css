@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Cabeçalho */
+#cabecalho {
+    background-color: #a3c361;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+}
+
+#menu li {
+    margin: 0 15px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #006c3f;
+    font-weight: bold;
+}
+
+#btn-entrar {
+    background-color: #f6931d;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Conteúdo da página */
+#conteudo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+#conteudo h1 {
+    color: #006c3f;
+    width: 400px;
+}
+
+#conteudo p {
+    width: 400px;
+    margin-top: 10px;
+}
+
+#conteudo img {
+    width: 350px;
+}
+
+/* Rodapé fixo na parte inferior */
+#rodape {
+    background-color: #a3c361;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Tela de Login */
+.pagina-login {
+    background-color: #a3c361;
+}
+
+.card-login {
+    background-color: white;
+    width: 300px;
+    margin: 60px auto;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card-login h1 {
+    color: #f6931d;
+    margin-bottom: 15px;
+}
+
+.card-login input {
+    width: 90%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.opcoes-login {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 10px 15px;
+}
+
+.opcoes-login a {
+    text-decoration: none;
+    color: gray;
+}
+
+.btn-login {
+    background-color: #f6931d;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.divisor {
+    margin: 15px 0;
+    color: gray;
+}
+
+.btn-cadastro {
+    display: inline-block;
+    background-color: #ccc;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+}
