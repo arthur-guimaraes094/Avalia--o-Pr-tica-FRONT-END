@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Seja um Parceiro - DoeJÁ</title>
+</head>
+<body>
+
+    <header>    
+        <div id="cabecalho">
+            <a href="index.html"><img src="assets/logo.svg" alt="Logo DoeJÁ"></a>
+            <nav id="menu">
+                <ul>
+                    <li><a href="doacoes.html">Doações</a></li>
+                    <li><a href="#">ONG'S</a></li>
+                    <li><a href="parceiro.html">Seja um parceiro</a></li>
+                </ul>
+            </nav>
+            <a href="login.html" id="btn-entrar">Entrar</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="secao-pagina">
+            <h1>Seja um Parceiro DoeJÁ</h1>
+            <p>Preencha os dados abaixo para cadastrar sua empresa, comércio ou iniciativa e ajudar a combater a fome.</p>
+
+            <form action="#" method="post" class="form-parceiro">
+                <div class="campo">
+                    <label for="nome">Nome Completo ou Razão Social:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome ou da instituição" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail de Contato:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone / WhatsApp:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" required>
+                </div>
+
+                <div class="campo">
+                    <label for="tipo">Tipo de Parceiro:</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecione uma categoria...</option>
+                        <option value="empresa">Empresa / Comércio</option>
+                        <option value="supermercado">Supermercado ou Mercearia</option>
+                        <option value="produtor">Produtor Rural / Feirante</option>
+                        <option value="voluntario">Voluntário Individual</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Forma Principal de Ajuda:</label>
+                    <div class="opcoes-radio">
+                        <label><input type="radio" name="ajuda" value="alimentos" checked> Alimentos</label>
+                        <label><input type="radio" name="ajuda" value="financeiro"> Financeiro</label>
+                        <label><input type="radio" name="ajuda" value="transporte"> Transporte/Logística</label>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem ou Observações:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva como deseja colaborar com o projeto..."></textarea>
+                </div>
+
+                <div class="campo-termos">
+                    <label>
+                        <input type="checkbox" required> Concordo em receber contato da equipe do DoeJÁ.
+                    </label>
+                </div>
+
+                <div class="botoes-form">
+                    <button type="submit" class="btn-enviar">Enviar Cadastro</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div id="rodape">
+            <p>&copy; 2026 DoeJÁ - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

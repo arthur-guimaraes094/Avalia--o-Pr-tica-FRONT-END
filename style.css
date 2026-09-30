@@ -1,6 +1,13 @@
 body {
     margin: 0;
     font-family: Arial;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 /* Cabeçalho */
@@ -57,15 +64,12 @@ body {
     width: 350px;
 }
 
-/* Rodapé fixo na parte inferior */
+/* Rodapé */
 #rodape {
     background-color: #a3c361;
     text-align: center;
     padding: 15px;
     color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 /* Tela de Login */
@@ -131,3 +135,129 @@ body {
     width: 90%;
     border-radius: 5px;
 }
+
+.btn-voltar {
+    display: inline-block;
+    margin-top: 15px;
+    color: #006c3f;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Estilos gerais para seções das páginas */
+.secao-pagina {
+    max-width: 800px;
+    margin: 30px auto 40px auto;
+    padding: 0 20px;
+}
+
+.secao-pagina h1 {
+    color: #006c3f;
+    margin-bottom: 8px;
+}
+
+.secao-pagina p {
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.secao-pagina h2 {
+    color: #f6931d;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+/* Tabela de Doações */
+.tabela-doacoes {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 15px;
+}
+
+.tabela-doacoes th,
+.tabela-doacoes td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+.tabela-doacoes th {
+    background-color: #a3c361;
+    color: white;
+}
+
+.tabela-doacoes tfoot {
+    background-color: #f6931d;
+    color: white;
+    font-weight: bold;
+}
+
+/* Formulário Seja um Parceiro */
+.form-parceiro {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    color: #006c3f;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="tel"],
+.campo select,
+.campo textarea {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial;
+}
+
+.opcoes-radio {
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.opcoes-radio label {
+    font-weight: normal;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.campo-termos {
+    margin: 15px 0 20px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.btn-enviar {
+    background-color: #f6931d;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
